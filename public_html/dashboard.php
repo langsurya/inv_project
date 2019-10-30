@@ -61,7 +61,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Categories</h5>
                         <p class="card-text">Here you can manage your categories and you add new parent and sub categories</p>
-                        <a href="#" class="btn btn-primary">Add</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#form_category">Add</a>
                         <a href="#" class="btn btn-primary">Manage</a>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Brands</h5>
                         <p class="card-text">Here you can manage your brand and you add new brand</p>
-                        <a href="#" class="btn btn-primary">Add</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#form_brand">Add</a>
                         <a href="#" class="btn btn-primary">Manage</a>
                     </div>
                 </div>
@@ -81,13 +81,22 @@
                     <div class="card-body">
                         <h5 class="card-title">Products</h5>
                         <p class="card-text">Here you can manage your products and you add new products</p>
-                        <a href="#" class="btn btn-primary">Add</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#form_products">Add</a>
                         <a href="#" class="btn btn-primary">Manage</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <?php
+    // Category Form
+    include_once "./templates/category.php";
+    // Brand Form
+    include_once "./templates/brand.php";
+    // Products Form
+    include_once "./templates/products.php";
+    ?>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
